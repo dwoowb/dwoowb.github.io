@@ -1,4 +1,4 @@
-html, body, form, input, label, h1, h2, h3, h4, p, ul, li {
+html, body, form, input, label, h1, h2, h3, h4, h5, p, ul, li {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,7 +29,7 @@ ul {
 	clear: both;
 }
 
-.content {
+.window {
 	width: 100%;
   height: 100%;
 }
@@ -37,7 +37,10 @@ ul {
 .nav {
 	display: block;
 	float: left;
+  position: fixed;
 	width: 215px;
+  /* TODO: content should be dynamically centered, while nav is fixed?*/
+
 }
 
 /*.nav, .main {
@@ -86,18 +89,20 @@ ul {
 .left-col {
   display: block;
   float: left;
-  width: 300px;
+  width: 350px;
 }
 
 .right-col {
   display: block;
   float: right;
-  width: 300px;
+  width: 350px;
 }
 
-.main {
+.content {
 	display: block;
-  width: 100%;
+  margin: 0 auto;
+  /* TODO: content should be dynamically centered, while nav is fixed?*/
+  width: 800px;
 	padding: 30px;
 }
 
@@ -106,10 +111,17 @@ ul {
 	font-weight: 300;
 }
 
-.resume {
-  display: block;
-  float: left;
-  width: 700px;
+.resume > header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.border {
+  border-bottom: 1px solid #fff;
+}
+
+.academic-info {
+  padding: 10px 0;
 }
 
 .name {
@@ -123,3 +135,12 @@ ul {
 .hidden {
   display: none;
 }
+
+.details {
+  display: inline-block;
+}
+
+.info {
+
+}
+
