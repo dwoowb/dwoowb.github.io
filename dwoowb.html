@@ -7,52 +7,172 @@
 		<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<!-- <link rel="stylesheet" href="animate.css"> -->
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>	
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	</head>
 	<body>
 		<section class="content group">
 			<header class="nav">
-				<img class="propic" src="images/profile_pic.jpg">		
+				<img class="propic" src="images/profile_pic.jpg">
 				<ul>
 					<li class="home-butt butt">
-						 <i class="fa fa-home"></i> Home
+						 <i class="fa fa-home"></i>
+             <p>Home</p>
 					</li>
 					<li class="resume-butt butt">
-						 <i class="fa fa-file-text-o"></i> Resume
+						 <i class="fa fa-file-text-o"></i>
+             <p>Resume</p>
 					</li>
 					<li class="projects-butt butt">
-						<i class="fa fa-code"></i> Projects
+						<i class="fa fa-code"></i>
+            <p>Projects</p>
+					</li>
+					<li class="github">
+						<a href="https://github.com/dwoowb">
+              <i class="fa fa-github"></i>
+              <p>Github</p>
+            </a>
+					</li>
+					<li class="linkedin">
+						<a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703">
+              <i class="fa fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+					</li>
+					<li class="contact">
+						<a href="mailto:dwoo92@gmail.com">
+              <i class="fa fa-envelope-o"></i>
+              <p>Contact</p>
+            </a>
 					</li>
 				</ul>
 			</header>
-			
-			<section class="main">
-				<h1>Hi my name is Daniel, and you are 
-					<a href="mailto:dwoo92@gmail.com">___________</a>?
+
+			<section class="main hidden">
+				<h1>Hi my name is Daniel, and you are
+					<a href="mailto:dwoo92@gmail.com">___________?</a>
 				</h1>
 			</section>
-			
+
 			<section class="resume">
-				
+        <header>
+          <h1 class="name left-col">Daniel Woo</h1>
+          <div class="contact-info right-col">
+            <a href="https://github.com/dwoowb">
+              Github
+            </a>
+            <a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703">
+              LinkedIn
+            </a>
+            Home: <a href="https://dwoowb.com">dwoowb.com</a>
+            Email: <a href="mailto:dwoo92@gmail.com">dwoo92@gmail.com</a>
+          </div>
+        </header>
+
+        <div class="academic-info right-col">
+          <p>NYU Leonard N. Stern School of Business '14</p>
+          <p>B.S. Finance, Entrepreneurship</p>
+          <p>SAT: 2310</p>
+        </div>
+
+        <div class="projects">
+          <h2 class="title">Projects</h2>
+          <div class="left-col">
+            <h3 class="title">SoundClone</h3>
+            <h4 class="details">2014</h4>
+            <h5 class="info">
+              Ruby on Rails, Backbone.js <br>
+              <a href="">Source</a> | <a href="">Deployed</a>
+            </h5>
+            <ul>
+              <li>
+                A SoundCloud clone built with a RESTful Rails API and Backbone.js frontend.
+              </li>
+              <li>
+                Implements custom parse method for complex, nested JSON structures.
+              </li>
+              <li>
+                Multiple composite views, all hand-styled.
+              </li>
+              <li>
+                Custom styled player using SoundManager2 API.
+              </li>
+            </ul>
+          </div>
+          <div class="right-col">
+            <h3 class="title">ActiveRecord Lite</h3>
+            <h4 class="details">2014</h4>
+            <h5 class="info">
+              Ruby <br>
+              <a href="">Source</a>
+            </h5>
+            <ul>
+              <li>ActiveRecord clone, exercising metaprogramming, includes mass assignment, querying, and associations.</li>
+            </ul>
+
+            <h3 class="title">Asteroids.js 2014</h3>
+            <h4 class="info">
+              JavaScript, HTML5 Canvas <br>
+              <a href="">Source</a> | <a href="">Deployed</a>
+            </h4>
+            <ul>
+              <li>
+                Arcade game in browser, uses trigonometric functions to calculate object velocities.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h2 class="title">Experience</h2>
+          <div class="left-col">
+            <h3 class="title">Plan C Agency</h3>
+            <h4 class="details">Los Angeles Summer 2012</h4>
+            <h5 class="info">Production Assistant</h5>
+            <ul>
+              <li>
+                Smoothly handled logistics for clients: venue booking and vendor arrangement.
+              </li>
+              <li>
+                Booth design and event creation for Verizon Wireless Dragon Boat Festival garnered high number of impressions.
+              </li>
+              <li>
+                Designed optimally incentivized payment structure for tour bus drivers
+              </li>
+            </ul>
+          </div>
+          <div class="right-col">
+            <h3 class="title">Sonder</h3>
+            <h4 class="details">NYC Jan-Jun 2013</h4>
+            <h5 class="info">Team Lead</h5>
+            <ul>
+              <li>
+                Worked in a team of four to validate a real-time, location based platform for NYU students to create and join interest-based events.
+              </li>
+              <li>
+                Designed wireframes for a working iPhone demo through POP.
+              </li>
+              <li>
+                Created pitch deck and presented to FirstMark Capital at NYU Stern.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="technologies left-col">
+          <p>Ruby, SQL, Ruby on Rails, HTML, CSS</p>
+          <p>JavaScript, Backbone.js, jQuery, AJAX</p>
+        </div>
+
+        <div class="other-interests right-col">
+          <p>Graphic Design, Typography, 3D Printing</p>
+          <p>Playing/Watching Basketball and Soccer</p>
+        </div>
 			</section>
-			
+
 			<section class="projects">
-				
+
 			</section>
-			
-			<footer>
-				<ul>
-					<li class="github">
-						<i class="fa fa-github"></i>
-					</li>
-					<li class="linkedin">
-						<i class="fa fa-linkedin"></i>
-					</li>
-					<li class="contact">
-						<i class="fa fa-envelope-o"></i>
-					</li>
-				</ul>
-			</footer>
+
 		</section>
 	</body>
 </html>
