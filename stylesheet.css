@@ -9,6 +9,11 @@ html, body, form, input, label, h1, h2, h3, h4, h5, p, ul, li {
   background: transparent;
 }
 
+@font-face {
+	font-family: "Prime Light";
+	src: local("Prime Light"), url("PrimeLight.otf") format("opentype");
+}
+
 a {
   width: 100%;
 	text-decoration: none;
@@ -85,12 +90,14 @@ ul {
   display: block;
   float: left;
   width: 350px;
+	margin-left: 10px;
 }
 
 .right-col {
   display: block;
   float: right;
   width: 350px;
+	margin-right: 10px;
 }
 
 .content {
@@ -121,9 +128,10 @@ ul {
 	text-decoration: underline;
 }
 
-.border {
-	display: inline-block;
-  border-bottom: 1px solid #fff;
+.resume-contact {
+	display: inline;
+	font-family: "Prime Light";
+	color: #800000;
 }
 
 .academic-info {
@@ -135,22 +143,27 @@ ul {
 	float: left;
 	text-align: right;
 	width: 140px;
-  font-size: 50px;
+  font-size: 60px;
+	font-family: "Prime Light";
+	color: #800000;
 }
 
 .contact-info {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .title {
 	display: inline-block;
   font-size: 24px;
+	font-family: "Prime Light";
 }
 
 .heading {
-  font-size: 24px;
-	margin: 10px 0;
-	border-bottom: 1px solid #000;
+  font-size: 30px;
+	font-family: "Prime Light";
+	margin: 10px 0 20px 0;
+	border-bottom: 1px solid #800000;
+	color: #800000;
 }
 
 .hidden {
@@ -167,8 +180,24 @@ ul {
 	margin-bottom: 10px;
 }
 
+.experience .details, .experience .info {
+	font-family: "Prime Light";
+}
+
 .projects ul > li, .experience ul > li, .technologies > p, .other-interests > p {
 	margin-bottom: 10px;
+}
+
+.technologies {
+  display: block;
+  float: left;
+  width: 360px;
+}
+
+.other-interests {
+  display: block;
+  float: right;
+  width: 370px;
 }
 
 .projects > h1 {
