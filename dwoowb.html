@@ -8,9 +8,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<!-- <link rel="stylesheet" href="animate.css"> -->
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="javascript.js"></script>
+		<title>Daniel Woo</title>
 	</head>
 	<body>
-		<section class="window group">
 			<header class="nav">
 				<img class="propic" src="images/profile_pic.jpg">
 				<ul>
@@ -27,19 +28,19 @@
             <p>Projects</p>
 					</li>
 					<li class="github">
-						<a href="https://github.com/dwoowb">
+						<a href="https://github.com/dwoowb" target="_newtab">
               <i class="fa fa-github"></i>
               <p>Github</p>
             </a>
 					</li>
 					<li class="linkedin">
-						<a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703">
+						<a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703" target="_newtab">
               <i class="fa fa-linkedin"></i>
               <p>LinkedIn</p>
             </a>
 					</li>
 					<li class="contact">
-						<a href="mailto:dwoo92@gmail.com">
+						<a href="mailto:dwoo92@gmail.com" target="_newtab">
               <i class="fa fa-envelope-o"></i>
               <p>Contact</p>
             </a>
@@ -47,30 +48,34 @@
 				</ul>
 			</header>
       <div class="content">
-  			<section class="main hidden">
+  			<section class="home">
   				<h1>Hi my name is Daniel, and you are
-  					<a href="mailto:dwoo92@gmail.com">___________?</a>
+  					<a href="mailto:dwoo92@gmail.com" target="_newtab">___________?</a>
   				</h1>
   			</section>
 
-  			<section class="resume">
+  			<section class="resume hidden">
           <header class="group">
             <h1 class="name left-col">Daniel Woo</h1>
             <ul class="contact-info right-col">
               <li>
-                <a href="https://github.com/dwoowb">
+                <a href="https://github.com/dwoowb" target="_newtab">
                   Github
                 </a> |
-                <a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703">
+                <a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703" target="_newtab">
                   LinkedIn
                 </a>
               </li>
               <li>
-                Home: <a href="https://dwoowb.com">dwoowb.com</a>
+                Telephone: (818)-970-8112
               </li>
               <li>
-                Email: <a href="mailto:dwoo92@gmail.com">dwoo92@gmail.com</a>
+                Email: <a href="mailto:dwoo92@gmail.com" target="_newtab">dwoo92@gmail.com</a>
               </li>
+							<li>
+								Address: 1061 Market St. #4, <br>
+								San Francisco, CA 94103
+							</li>
             </ul>
           </header>
 
@@ -83,13 +88,13 @@
           </div>
 
           <div class="projects group">
-            <h2 class="title">Projects</h2>
+            <h2 class="heading">Projects</h2>
             <div class="left-col">
               <h3 class="title">SoundClone</h3>
               <h4 class="details">2014</h4>
               <h5 class="info">
                 Ruby on Rails, Backbone.js <br>
-                <a href="">Source</a> | <a href="">Deployed</a>
+                <a href="https://github.com/dwoowb/soundclown" target="_newtab">Source</a> | <a href="">Deployed</a>
               </h5>
               <ul>
                 <li>
@@ -111,16 +116,17 @@
               <h4 class="details">2014</h4>
               <h5 class="info">
                 Ruby <br>
-                <a href="">Source</a>
+                <a href="https://github.com/dwoowb/ActiveRecord" target="_newtab">Source</a>
               </h5>
               <ul>
                 <li>ActiveRecord clone, exercising metaprogramming, includes mass assignment, querying, and associations.</li>
               </ul>
 
-              <h3 class="title">Asteroids.js 2014</h3>
+              <h3 class="title">Asteroids.js</h3>
+              <h4 class="details">2014</h4>
               <h4 class="info">
                 JavaScript, HTML5 Canvas <br>
-                <a href="">Source</a> | <a href="">Deployed</a>
+                <a href="https://github.com/dwoowb/Asteroids" target="_newtab">Source</a> | <a href="">Deployed</a>
               </h4>
               <ul>
                 <li>
@@ -131,7 +137,7 @@
           </div>
 
           <div class="experience group">
-            <h2 class="title">Experience</h2>
+            <h2 class="heading">Experience</h2>
             <div class="left-col">
               <h3 class="title">Plan C Agency</h3>
               <h4 class="details">Los Angeles Summer 2012</h4>
@@ -167,22 +173,41 @@
           </div>
 
           <div class="technologies left-col">
-            <h2 class="title">Technologies</h2>
+            <h2 class="heading">Technologies</h2>
             <p>Ruby, SQL, Ruby on Rails, HTML, CSS</p>
-            <p>JavaScript, Backbone.js, jQuery, AJAX</p>
+            <p>JavaScript, Backbone.js, jQuery, Git, RSpec</p>
           </div>
 
           <div class="other-interests right-col">
-            <h2 class="title">Other Interests</h2>
+            <h2 class="heading">Other Interests</h2>
             <p>Graphic Design, Typography, 3D Printing</p>
             <p>Playing/Watching Basketball and Soccer</p>
           </div>
   			</section>
-
-  			<section class="projects">
-
-  			</section>
+				
+				<section class="projects hidden">
+					<h1>Projects</h1>
+					<ul>
+						<li>
+							<a href="" target="_newtab">
+								<img src=""></img>
+							</a>
+						</li>
+						
+						<li>
+							<a href="" target="_newtab">
+								<img src=""></img>
+							</a>
+						</li>
+						
+						<li>
+							<a href="" target="_newtab">
+								<img src=""></img>
+							</a>
+						</li>
+					</ul>
+				</section>
+				
       </div>
-		</section>
 	</body>
 </html>

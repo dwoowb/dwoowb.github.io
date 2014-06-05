@@ -29,11 +29,6 @@ ul {
 	clear: both;
 }
 
-.window {
-	width: 100%;
-  height: 100%;
-}
-
 .nav {
 	display: block;
 	float: left;
@@ -103,12 +98,18 @@ ul {
   margin: 0 auto;
   /* TODO: content should be dynamically centered, while nav is fixed?*/
   width: 800px;
+	height: 100%;
 	padding: 30px;
+	/* honestly I don't think this is even doing anything...*/
 }
 
-.main > h1 {
+.home > h1 {
 	font-size: 40px;
 	font-weight: 300;
+}
+
+.resume {
+	height: 950px;
 }
 
 .resume > header {
@@ -116,20 +117,40 @@ ul {
   border-bottom: 1px solid #000;
 }
 
+.resume a {
+	text-decoration: underline;
+}
+
 .border {
+	display: inline-block;
   border-bottom: 1px solid #fff;
 }
 
 .academic-info {
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
 .name {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 140px;
   font-size: 50px;
 }
 
+.contact-info {
+	margin-top: 30px;
+}
+
 .title {
+	display: inline-block;
   font-size: 24px;
+}
+
+.heading {
+  font-size: 24px;
+	margin: 10px 0;
+	border-bottom: 1px solid #000;
 }
 
 .hidden {
@@ -138,9 +159,19 @@ ul {
 
 .details {
   display: inline-block;
+	font-size: 18px;
 }
 
 .info {
-
+	font-size: 14px;
+	margin-bottom: 10px;
 }
 
+.projects ul > li, .experience ul > li, .technologies > p, .other-interests > p {
+	margin-bottom: 10px;
+}
+
+.projects > h1 {
+	font-size: 50px;
+	text-align: center;
+}
