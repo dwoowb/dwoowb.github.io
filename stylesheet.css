@@ -39,15 +39,7 @@ ul {
 	float: left;
   position: fixed;
 	width: 215px;
-  /* TODO: content should be dynamically centered, while nav is fixed?*/
-
 }
-
-/*.nav, .main {
-  position: relative;
-  top: 20%;
-  transform: translateY(-50%);
-}*/
 
 .propic {
 	width: 150px;
@@ -103,16 +95,24 @@ ul {
 .content {
 	display: block;
   margin: 0 auto;
-  /* TODO: content should be dynamically centered, while nav is fixed?*/
   width: 800px;
 	height: 100%;
 	padding: 30px;
-	/* honestly I don't think this is even doing anything...*/
+}
+
+.home {
+	margin-top: 100px;
 }
 
 .home > h1 {
 	font-size: 40px;
 	font-weight: 300;
+}
+
+.home > h2 {
+	display: block;
+	float: right;
+	margin-right: 80px;
 }
 
 .resume {
@@ -203,4 +203,38 @@ ul {
 .projects > h1 {
 	font-size: 50px;
 	text-align: center;
+	margin-bottom: 20px;
+}
+
+.project-header {
+	border-bottom: 1px solid #800000;
+}
+
+.projects h2 {
+	display: block;
+	float: left;
+	font-size: 30px;
+}
+
+.live-source {
+	display: block;
+	float: right;
+	padding-top: 15px;
+}
+
+.live-source > h3 {
+	display: inline-block;
+}
+
+.projects img {
+	width: 800px;
+	height: 540px;
+}
+
+.projects > ul ul {
+	list-style: circle;
+}
+
+.projects > ul ul > li {
+	margin-left: 55px;
 }
