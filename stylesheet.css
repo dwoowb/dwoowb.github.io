@@ -236,5 +236,11 @@ ul {
 }
 
 .projects > ul ul > li {
-	margin-left: 55px;
+	margin-left: 70px;
+}
+
+.projects h4 {
+	margin-left: 45px;
+	margin-bottom: 10px;
+	font-size: 18px;
 }
