@@ -98,6 +98,7 @@ ul {
   width: 800px;
 	height: 100%;
 	padding: 30px;
+  padding-left: 200px;
 }
 
 .home {
@@ -107,6 +108,10 @@ ul {
 .home > h1 {
 	font-size: 40px;
 	font-weight: 300;
+}
+
+.home > h1 > a {
+  text-decoration: underline;
 }
 
 .home > h2 {
