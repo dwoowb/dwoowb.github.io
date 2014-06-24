@@ -175,6 +175,10 @@ ul {
   display: none;
 }
 
+.resume-projects li {
+  margin-bottom: 5px;
+}
+
 .details {
   display: inline-block;
 	font-size: 18px;
