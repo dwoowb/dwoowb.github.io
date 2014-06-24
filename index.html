@@ -99,13 +99,16 @@
               </h5>
               <ul>
                 <li>
-                  Rebuilt major SoundCloud functionality, Single-page Backbone app, consuming a RESTful Rails API.
+                  Rebuilt major SoundCloud functionality, Backbone app, consuming a RESTful Rails API. 
+                </li>
+								<li>
+									Single-page functionality allows app navigation without interrupting playback.
+								</li>
+                <li>
+									Overrides Backbone’s Model#parse method to recreate Rails-esque assocations in the client.
                 </li>
                 <li>
-                  Implements custom parse method for models with complex associations.
-                </li>
-                <li>
-                  Composite views used to rerender only necessary subviews, in response to user action.
+									User stats subviews update in real-time without triggering an entire page re-render
                 </li>
                 <li>
                   Custom styled player using SoundManager2 API.
@@ -127,7 +130,7 @@
               <h3 class="title">Asteroids.js</h3>
               <h4 class="details">2014</h4>
               <h4 class="info">
-                JavaScript, HTML5 Canvas <br>
+                JavaScript, HTML5 Canvas, jQuery <br>
                 <a href="https://github.com/dwoowb/Asteroids" target="_newtab">Source</a> | <a href="/asteroids" target="_newtab">Deployed</a>
               </h4>
               <ul>
@@ -149,11 +152,10 @@
                   Booth design and event creation for Verizon Wireless Dragon Boat Festival garnered high number of impressions.
                 </li>
                 <li>
-                  Proofed copy for Gilead print ad, checking formatting and content. 
-
+									Proofed copy for Gilead print ad, checking formatting and content. Gilead’s HBV treatment prescriptions increased by 14% year-over-year, becoming the national leader.
                 </li>
                 <li>
-                  Mapped out specifications with lead designer for Verizon's APAHM tour campaign.
+                  Collaborated with lead designer on Verizon’s nation-wide 2013 promotional concert tour. Identified fonts, layouts, and color schemes that were integrated into the final product. 
                 </li>
               </ul>
             </div>
@@ -161,15 +163,19 @@
               <h3 class="title">Sonder</h3>
               <h4 class="details">NYC Jan-Jun 2013</h4>
               <h5 class="info">Team Lead</h5>
+							<br>
               <ul>
                 <li>
                   Worked in a team of four to validate a real-time, location based platform for NYU students to create and join interest-based events.
                 </li>
+								<li>
+									Adhered to lean methodology, continuously validating or overturning assumptions to pinpoint actual user needs.
+								</li>
                 <li>
                   Designed wireframes for a working iPhone demo through POP.
                 </li>
                 <li>
-                  Created pitch deck and presented to FirstMark Capital at NYU Stern.
+                  Submitted and presented a pitchdeck to FirstMark Capital’s general partners at NYU Stern.
                 </li>
               </ul>
             </div>
@@ -215,10 +221,11 @@
 							<h4>Rebuilt core SoundCloud functionality, Single-page Backbone app, consuming a RESTful Rails API.
 </h4>
 							<ul>
+								<li>Single-page functionality allows users to navigate without interrupting playback</li>
 								<li>Intelligently bootstraps data to minimize server requests</li>
 								<li>Builds nested JSON structures using JBuilder</li>
 								<li>Implements custom parse method</li>
-								<li>Hand built CompositeView, extension of Backbone.View</li>
+								<li>Hand built CompositeView, extension of Backbone.View, to only re-render necessary subviews</li>
 								<li>All views are hand styled</li>
 								<li>Custom styled player, using SoundManager2 API</li>
 							</ul>
