@@ -1,6 +1,6 @@
 module.exports = {
   context: __dirname,
-  entry: './stacey_time/app.jsx',
+  entry: './time_sheet/app.jsx',
   output: {
     filename: './bundle.js',
   },
