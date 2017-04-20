@@ -5,6 +5,7 @@ html, body, form, input, label, h1, h2, h3, h4, h5, p, ul, li {
 	height: 100%;
   font: inherit;
 	font-family: 'Lato', sans-serif;
+  font-weight: 300;
   vertical-align: baseline;
   background: transparent;
 }
@@ -111,7 +112,6 @@ ul {
 
 .home > h1 {
 	font-size: 40px;
-	font-weight: 300;
 }
 
 .home > h1 > a {
