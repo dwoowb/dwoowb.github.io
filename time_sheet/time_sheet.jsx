@@ -3,7 +3,7 @@
 
 import React from 'react';
 import moment from 'moment';
-import { inputFormat, outputFormat, lunchLength, hoursWithoutBreak, } from './constants';
+import { inputFormat, outputFormat, hoursWithoutBreak, } from './constants';
 
 class TimeSheet extends React.Component {
   constructor() {
@@ -11,6 +11,7 @@ class TimeSheet extends React.Component {
     this.state = {
       startTime: '',
       hoursToWork: '',
+      lunchLength: 45,
     };
   };
 
@@ -22,10 +23,10 @@ class TimeSheet extends React.Component {
     this.setState(nextState);
   };
 
-  getQuittingTime({ startTime, hoursToWork, }) {
+  getQuittingTime({ startTime, hoursToWork, lunchLength, }) {
     if (startTime && hoursToWork) {
       return moment(startTime, inputFormat)
-        .add(lunchLength, 'minutes')
+        .add(Number(lunchLength), 'minutes')
         .add(Number(hoursToWork), 'hours')
         .format(outputFormat);
     };
@@ -36,7 +37,7 @@ class TimeSheet extends React.Component {
   };
 
   render() {
-    const { startTime, hoursToWork, } = this.state;
+    const { startTime, hoursToWork, lunchLength, } = this.state;
 
     return (
       <div>
@@ -54,8 +55,17 @@ class TimeSheet extends React.Component {
             <input
               type="number" 
               name="hoursToWork" 
-              value={ hoursToWork } 
+              value={hoursToWork} 
               tabindex={1} 
+              onChange={e => this.handleChange(e)}>
+            </input>
+          </label>
+          <label> How long is your lunch today?
+            <input
+              type="number" 
+              name="lunchLength" 
+              value={lunchLength} 
+              tabindex={2} 
               onChange={e => this.handleChange(e)}>
             </input>
           </label>
