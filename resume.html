@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="javascript.js"></script>
+    <title>Daniel Woo</title>
+  </head>
+  <body>
+      <!-- <header class="nav">
+        <img class="propic" src="images/profile_pic.jpg">
+        <ul>
+          <li class="home-butt butt">
+             <i class="fa fa-home"></i>
+             <p>Home</p>
+          </li>
+          <li class="resume-butt butt">
+             <i class="fa fa-file-text-o"></i>
+             <p>Resume</p>
+          </li>
+          <li class="projects-butt butt">
+            <i class="fa fa-code"></i>
+            <p>Projects</p>
+          </li>
+          <li class="github">
+            <a href="https://github.com/dwoowb" target="_newtab">
+              <i class="fa fa-github"></i>
+              <p>Github</p>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703" target="_newtab">
+              <i class="fa fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+          </li>
+          <li class="contact">
+            <a href="mailto:dwoo92@gmail.com" target="_newtab">
+              <i class="fa fa-envelope-o"></i>
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+      </header> -->
+      <div class="content for-resume">
+        <section class="home hidden">
+          <h1>Hi my name is Daniel, what's
+            <a href="mailto:dwoo92@gmail.com" target="_newtab">yours?</a>
+          </h1><br>
+          <h1>Let's build something great together.</h1>
+        </section>
+
+        <section class="resume">
+          <header class="group">
+            <h1 class="name left-col">Daniel Woo</h1>
+            <ul class="contact-info right-col">
+              <li>
+                <a href="https://github.com/dwoowb" target="_newtab" class="resume-contact">
+                  Github
+                </a> |
+                <a href="https://www.linkedin.com/pub/daniel-woo/50/2a3/703" target="_newtab" class="resume-contact">
+                  LinkedIn
+                </a> |
+                <a href="http://dwoowb.com" class="resume-contact">Home</a>
+              </li>
+              <li>
+                <p class="resume-contact">Tel:</p> (818)-970-8112
+              </li>
+              <li>
+                <p class="resume-contact">Email:</p> <a href="mailto:dwoo92@gmail.com" target="_newtab">dwoo92@gmail.com</a>
+              </li>
+              <li>
+                <p class="resume-contact">Add:</p> 
+                201 Dolores St. #8, <br>
+                San Francisco, CA 94103
+              </li>
+            </ul>
+          </header>
+
+          <div class="academic-info group">
+            <div class="right-col">
+              <p>NYU Leonard N. Stern School of Business '14</p>
+              <p>B.S. Finance, Entrepreneurship</p>
+            </div>
+          </div>
+
+          <div class="resume-projects group">
+            <h2 class="heading">Projects</h2>
+            <div class="left-col">
+              <h3 class="title">SoundClone</h3>
+              <h4 class="details">2014</h4>
+              <h5 class="info">
+                Ruby on Rails, Backbone.js <br>
+                <a href="https://github.com/dwoowb/soundclown" target="_newtab">Source</a> | <a href="http://soundclown.herokuapp.com">Deployed</a>
+              </h5>
+              <ul>
+                <li>
+                  Rebuilt major SoundCloud functionality, Backbone app, consuming a RESTful Rails API. 
+                </li>
+                <li>
+                  Single-page functionality allows app navigation without interrupting playback.
+                </li>
+                <li>
+                  Overrides Backbone’s Model#parse method to recreate Rails-esque assocations in the client.
+                </li>
+                <li>
+                  User stats subviews update in real-time without triggering an entire page re-render.
+                </li>
+                <li>
+                  Custom styled player using SoundManager2 API.
+                </li>
+              </ul>
+            </div>
+            <div class="right-col">
+              <h3 class="title">ActiveRecord Lite</h3>
+              <h4 class="details">2014</h4>
+              <h5 class="info">
+                Ruby <br>
+                <a href="https://github.com/dwoowb/ActiveRecord" target="_newtab">Source</a>
+              </h5>
+              <ul>
+                <li>ActiveRecord clone, exercising metaprogramming, includes mass assignment, querying, and associations.</li>
+              </ul>
+              <br>
+
+              <h3 class="title">Asteroids.js</h3>
+              <h4 class="details">2014</h4>
+              <h4 class="info">
+                JavaScript, HTML5 Canvas, jQuery <br>
+                <a href="https://github.com/dwoowb/Asteroids" target="_newtab">Source</a> | <a href="/asteroids" target="_newtab">Deployed</a>
+              </h4>
+              <ul>
+                <li>
+                  Arcade game in browser, uses trigonometric functions to calculate object velocities.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience group">
+            <h2 class="heading">Experience</h2>
+            <div class="left-col">
+              <h3 class="title">Prosper</h3>
+              <h4 class="details">SF 2014-2017</h4>
+              <h5 class="info">Software Engineer</h5>
+              <ul>
+                <li>
+                  Designed and implemented a ReactJS SPA using Google Ventures design sprint methodology. Handled product and engineering aspects, both creating requirements with business stakeholders and implementing them.
+                </li>
+                <li>
+                  Converted a legacy excel worksheet used to verify borrower income and built up over 4 years into a ReactJS application. Conversion generated a $784k increase in originations per day.
+                </li>
+                <li>
+                  Replaced borrower verification functionality held in Salesforce with a Ruby on Rails and BackboneJS/MarionetteJS application. The application was used to verify $200M in loans a month at its peak.
+                </li>
+              </ul>
+            </div>
+            <div class="right-col">
+              <h3 class="title">Sonder</h3>
+              <h4 class="details">NYC Jan-Jun 2013</h4>
+              <h5 class="info">Team Lead</h5>
+              <br>
+              <ul>
+                <li>
+                  Worked in a team of four to validate a real-time, location based platform for NYU students to create and join interest-based events.
+                </li>
+                <li>
+                  Adhered to lean methodology, continuously validating or overturning assumptions to pinpoint actual user needs.
+                </li>
+                <li>
+                  Designed wireframes for a working iPhone demo through POP.
+                </li>
+                <li>
+                  Submitted and presented a pitchdeck to FirstMark Capital’s general partners at NYU Stern.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="technologies">
+            <h2 class="heading">Technologies</h2>
+            <div class="left-col">
+              <p>Ruby on Rails, SQL, HTML, CSS</p>
+              <p>React.js, Backbone.js, jQuery, Git, RSpec</p>
+            </div>
+          </div>
+
+          <div class="other-interests">
+            <h2 class="heading">Other Interests</h2>
+            <div class="right-col">
+              <p>Graphic Design, Typography</p>
+              <p>UX/UI, 3D Design, Craft</p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="projects hidden">
+          <h1>Projects</h1>
+          <ul>
+            <li>
+              <div class="project-header group">
+                <h2>  
+                  <a href="http://www.soundclone.us" target="_newtab">SoundClone</a>
+                </h2>
+                <div class="live-source">
+                  <h3>  
+                    <a href="http://www.soundclone.us" target="_newtab">Live</a>
+                  </h3> / 
+                  <h3>  
+                    <a href="https://github.com/dwoowb/soundclown" target="_newtab">Source</a>
+                  </h3>
+                </div>
+              </div>
+              <a href="http://www.soundclone.us" target="_newtab">
+                <img src="images/SoundClone.png">
+              </a>
+              <h4>Rebuilt core SoundCloud functionality, Single-page Backbone app, consuming a RESTful Rails API
+</h4>
+              <ul>
+                <li>Single-page functionality allows users to navigate without interrupting playback</li>
+                <li>Intelligently bootstraps data to minimize server requests</li>
+                <li>Builds nested JSON structures using JBuilder</li>
+                <li>Implements custom parse method</li>
+                <li>Hand built CompositeView, extension of Backbone.View, to only re-render necessary subviews</li>
+                <li>All views are hand styled</li>
+                <li>Custom styled player, using SoundManager2 API</li>
+              </ul>
+            </li>
+  
+            <li>
+              <div class="project-header group">
+                <h2>  
+                  <a href="https://github.com/dwoowb/ActiveRecord" target="_newtab">ActiveRecord Lite</a>
+                </h2>
+                <div class="live-source">
+                  <h3>  
+                    <a href="https://github.com/dwoowb/ActiveRecord" target="_newtab">Source</a>
+                  </h3>
+                </div>
+              </div>
+              <a href="https://github.com/dwoowb/ActiveRecord" target="_newtab">
+                <img src="images/ActiveRecord.png">
+              </a>
+              <h4>ActiveRecord Lite, an exercise in metaprogramming</h4>
+              <ul>
+                <li>Mass Assignment</li>
+                <li>Querying</li>
+                <li>Associations</li>
+              </ul>
+            </li>
+                      
+            <li>
+              <div class="project-header group">
+                <h2>  
+                  <a href="/asteroids" target="_newtab">Asteroids</a>
+                </h2>
+                <div class="live-source">
+                  <h3>  
+                    <a href="/asteroids" target="_newtab">Live</a>
+                  </h3> / 
+                  <h3>  
+                    <a href="https://github.com/dwoowb/asteroids" target="_newtab">Source</a>
+                  </h3>
+                </div>
+              </div>
+              <a href="/asteroids" target="_newtab">
+                <img src="images/asteroids.png">
+              </a>
+              <h4>Classic arcade game built with JavaScript and HTML5 Canvas</h4>
+              <ul>
+                <li>
+                  Implements custom "inherits" method
+                </li>
+                <li>
+                  Ship, asteroids, and bullets inherit from MovingObject class
+                </li>
+              </ul>
+            </li>
+            
+            <li>
+              <div class="project-header group">
+                <h2>  
+                  Chess
+                </h2>
+                <div class="live-source">
+                  <h3>  
+                    <a href="https://github.com/dwoowb/chess" target="_newtab">Source</a>
+                  </h3>
+                </div>
+              </div>
+              <img src="images/Chess.png">
+              <h4>In terminal chess for two people, built with Ruby</h4>
+              <ul>
+                <li>
+                  Follows OOP principles, modularizing pieces under SlidingPiece and SteppingPiece
+                </li>
+                <li>
+                  Allows players to save and resume games using YAML
+                </li>
+                <li>
+                  Uses 'colorize' gem to build the board, and unicode characters for pieces
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        
+      </div>
+  </body>
+</html>
