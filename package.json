@@ -5,6 +5,7 @@
   "main": "lol not for consumption",
   "scripts": {
     "postinstall": "webpack",
+    "webpack": "webpack",
     "start": "webpack-dev-server --inline --hot"
   },
   "repository": {
