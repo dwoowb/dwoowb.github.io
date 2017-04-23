@@ -32943,7 +32943,7 @@ var TimeSheet = function (_React$Component) {
               null,
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4 },
+                { sm: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.ControlLabel,
                   null,
@@ -32952,7 +32952,7 @@ var TimeSheet = function (_React$Component) {
               ),
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4, xsPush: 4 },
+                { sm: 4, smPush: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.InputGroup,
                   null,
@@ -32977,7 +32977,7 @@ var TimeSheet = function (_React$Component) {
               null,
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4 },
+                { sm: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.ControlLabel,
                   null,
@@ -32986,7 +32986,7 @@ var TimeSheet = function (_React$Component) {
               ),
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4, xsPush: 4 },
+                { sm: 4, smPush: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.InputGroup,
                   null,
@@ -33017,7 +33017,7 @@ var TimeSheet = function (_React$Component) {
               null,
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4 },
+                { sm: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.ControlLabel,
                   null,
@@ -33026,7 +33026,7 @@ var TimeSheet = function (_React$Component) {
               ),
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4, xsPush: 4 },
+                { sm: 4, smPush: 4 },
                 _react2.default.createElement(
                   _reactBootstrap.InputGroup,
                   null,
@@ -33061,20 +33061,20 @@ var TimeSheet = function (_React$Component) {
               null,
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4 },
+                { sm: 4 },
                 _react2.default.createElement(
-                  'p',
+                  'strong',
                   null,
                   'Clock Out:'
                 )
               ),
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 2, xsPush: 6 },
+                { sm: 3, smPush: 5 },
                 _react2.default.createElement(
                   'p',
                   null,
-                  this.getQuittingTime(this.state)
+                  this.getQuittingTime(this.state) || 'N/A'
                 )
               )
             ),
@@ -33083,20 +33083,20 @@ var TimeSheet = function (_React$Component) {
               null,
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 4 },
+                { sm: 4 },
                 _react2.default.createElement(
-                  'p',
+                  'strong',
                   null,
                   'Take Lunch by:'
                 )
               ),
               _react2.default.createElement(
                 _reactBootstrap.Col,
-                { xs: 2, xsPush: 6 },
+                { sm: 3, smPush: 5 },
                 _react2.default.createElement(
                   'p',
                   null,
-                  this.getLunchTime(this.state)
+                  this.getLunchTime(this.state) || 'N/A'
                 )
               )
             )
@@ -36028,7 +36028,7 @@ exports = module.exports = __webpack_require__(369)(undefined);
 
 
 // module
-exports.push([module.i, ":root {\n  --stacey-bg-color: #F4ECF7;\n  --stacey-title-color: #7D3C98;\n}\n\nbody {\n  display: flex;\n  flex-direction: column;\n  justify-content: unsafe center;\n}\n\n#content {\n  width: 40%;\n  margin: 0 auto;\n}\n\n.results .row .col:last-child p {\n  text-align: right;\n}\n\n.panel-body > .well:last-of-type {\n  margin-bottom: 0;\n}\n\n.panel-stacey {\n  border-color: var(--stacey-bg-color);\n}\n\n.panel-stacey > .panel-heading {\n  border-color: var(--stacey-bg-color);\n  color: var(--stacey-title-color);\n  background: var(--stacey-bg-color);\n}\n\n.panel-stacey .results {\n  background: var(--stacey-bg-color);\n}", ""]);
+exports.push([module.i, ":root {\n  --stacey-bg-color: #F4ECF7;\n  --stacey-title-color: #7D3C98;\n}\n\nbody {\n  display: flex;\n  flex-direction: column;\n  justify-content: unsafe center;\n}\n\n#content {\n  max-width: 600px;\n  margin: 0 auto;\n  padding: 20px;\n}\n\n@media only screen and (min-width: 768px) {\n  .results .row [class*=\"col-\"]:last-child p {\n    text-align: right;\n  }\n}\n\n.panel-body > .well:last-of-type {\n  margin-bottom: 0;\n}\n\n.panel-title {\n  text-align: center;\n}\n\n.panel-stacey {\n  border-color: var(--stacey-bg-color);\n}\n\n.panel-stacey > .panel-heading {\n  border-color: var(--stacey-bg-color);\n  color: var(--stacey-title-color);\n  background: var(--stacey-bg-color);\n}\n\n.panel-stacey .results {\n  background: var(--stacey-bg-color);\n}", ""]);
 
 // exports
 
