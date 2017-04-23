@@ -56,10 +56,10 @@ class TimeSheet extends React.Component {
         <Panel header={title} bsStyle="stacey">
           <Form horizontal>
             <FormGroup>
-              <Col xs={4}>
+              <Col sm={4}>
                 <ControlLabel>Clock In: </ControlLabel>
               </Col>
-              <Col xs={4} xsPush={4}>
+              <Col sm={4} smPush={4}>
                 <InputGroup>
                   <InputGroup.Addon>
                     <i className="fa fa-clock-o"></i>
@@ -75,10 +75,10 @@ class TimeSheet extends React.Component {
             </FormGroup>
 
             <FormGroup>
-              <Col xs={4}>
+              <Col sm={4}>
                 <ControlLabel>Hours To Work: </ControlLabel>
               </Col>
-              <Col xs={4} xsPush={4}>
+              <Col sm={4} smPush={4}>
                 <InputGroup>
                   <FormControl
                     type="number"
@@ -96,10 +96,10 @@ class TimeSheet extends React.Component {
             </FormGroup>
 
             <FormGroup>
-              <Col xs={4}>
+              <Col sm={4}>
                 <ControlLabel>Lunch Length: </ControlLabel>
               </Col>
-              <Col xs={4} xsPush={4}>
+              <Col sm={4} smPush={4}>
                 <InputGroup>
                   <FormControl
                     type="number"
@@ -119,19 +119,19 @@ class TimeSheet extends React.Component {
 
           <Well className="results">
             <Row>
-              <Col xs={4}>
-                <p>Clock Out:</p>
+              <Col sm={4}>
+                <strong>Clock Out:</strong>
               </Col>
-              <Col xs={2} xsPush={6}>
-                <p>{ this.getQuittingTime(this.state) }</p>
+              <Col sm={2} smPush={6}>
+                <p>{ this.getQuittingTime(this.state) || 'N/A' }</p>
               </Col>
             </Row>
             <Row>
-              <Col xs={4}>
-                <p>Take Lunch by:</p>
+              <Col sm={4}>
+                <strong>Take Lunch by:</strong>
               </Col>
-              <Col xs={2} xsPush={6}>
-                <p>{ this.getLunchTime(this.state) }</p>
+              <Col sm={2} smPush={6}>
+                <p>{ this.getLunchTime(this.state) || 'N/A' }</p>
               </Col>
             </Row>
           </Well>

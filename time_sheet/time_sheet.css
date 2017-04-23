@@ -10,12 +10,14 @@ body {
 }
 
 #content {
-  width: 40%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.results .row .col:last-child p {
-  text-align: right;
+@media only screen and (min-width: 768px) {
+  .results .row [class*="col-"]:last-child p {
+    text-align: right;
+  }
 }
 
 .panel-body > .well:last-of-type {
