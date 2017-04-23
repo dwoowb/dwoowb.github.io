@@ -122,7 +122,7 @@ class TimeSheet extends React.Component {
               <Col sm={4}>
                 <strong>Clock Out:</strong>
               </Col>
-              <Col sm={2} smPush={6}>
+              <Col sm={3} smPush={5}>
                 <p>{ this.getQuittingTime(this.state) || 'N/A' }</p>
               </Col>
             </Row>
@@ -130,7 +130,7 @@ class TimeSheet extends React.Component {
               <Col sm={4}>
                 <strong>Take Lunch by:</strong>
               </Col>
-              <Col sm={2} smPush={6}>
+              <Col sm={3} smPush={5}>
                 <p>{ this.getLunchTime(this.state) || 'N/A' }</p>
               </Col>
             </Row>
