@@ -1,0 +1,37 @@
+:root {
+  --stacey-bg-color: #F4ECF7;
+  --stacey-title-color: #7D3C98;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: unsafe center;
+}
+
+#content {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.results .row .col:last-child p {
+  text-align: right;
+}
+
+.panel-body > .well:last-of-type {
+  margin-bottom: 0;
+}
+
+.panel-stacey {
+  border-color: var(--stacey-bg-color);
+}
+
+.panel-stacey > .panel-heading {
+  border-color: var(--stacey-bg-color);
+  color: var(--stacey-title-color);
+  background: var(--stacey-bg-color);
+}
+
+.panel-stacey .results {
+  background: var(--stacey-bg-color);
+}
