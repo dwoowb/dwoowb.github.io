@@ -26,19 +26,15 @@ class TimeSheet extends React.Component {
     };
   };
 
-  handleChange(e) {
-    e.preventDefault();
-    const nextState = { 
-      [e.target.name]: e.target.value,
-    };
+  handleChange(nextState) {
     this.setState(nextState);
   };
 
   getQuittingTime({ startTime, hoursToWork, lunchLength, }) {
     if (startTime && hoursToWork) {
       return moment(startTime, inputFormat)
-        .add(Number(lunchLength), 'minutes')
-        .add(Number(hoursToWork), 'hours')
+        .add(lunchLength, 'minutes')
+        .add(hoursToWork, 'hours')
         .format(outputFormat);
     };
   };
@@ -53,7 +49,7 @@ class TimeSheet extends React.Component {
 
     return (
       <div>
-        <Panel header={title} bsStyle="stacey">
+        <Panel header={title} className="panel-stacey">
           <Form horizontal>
             <FormGroup>
               <Col sm={4}>
@@ -68,7 +64,11 @@ class TimeSheet extends React.Component {
                     type="time"
                     name="startTime"
                     value={startTime}
-                    onChange={e => this.handleChange(e)}
+                    onChange={e => {
+                        e.preventDefault();
+                        this.handleChange({ [e.target.name]: e.target.value });
+                      }
+                    }
                   />
                 </InputGroup>
               </Col>
@@ -86,7 +86,11 @@ class TimeSheet extends React.Component {
                     step={1}
                     name="hoursToWork"
                     value={hoursToWork}
-                    onChange={e => this.handleChange(e)}
+                    onChange={e => {
+                        e.preventDefault();
+                        this.handleChange({ [e.target.name]: e.target.valueAsNumber });
+                      }
+                    }
                   />
                   <InputGroup.Addon>
                     <span>hours</span>
@@ -107,7 +111,11 @@ class TimeSheet extends React.Component {
                     step={1}
                     name="lunchLength"
                     value={lunchLength}
-                    onChange={e => this.handleChange(e)}
+                    onChange={e => {
+                        e.preventDefault();
+                        this.handleChange({ [e.target.name]: e.target.valueAsNumber });
+                      }
+                    }
                   />
                   <InputGroup.Addon>
                     <span>minutes</span>
