@@ -1,6 +1,5 @@
-@font-face {
-	font-family: "Prime Light";
-	src: local("Prime Light"), url("PrimeLight.otf") format("opentype");
+:root {
+  --resume-color: #800000;
 }
 
 a {
@@ -9,8 +8,9 @@ a {
   color: #000;
 }
 
-a:hover, .nav > ul > li:hover {
-  color: #800000;
+a:hover, .nav > ul > li:hover, .home > h1 > a:hover {
+  color: var(--resume-color);
+  border-color: var(--resume-color);
 }
 
 ul {
@@ -103,7 +103,7 @@ ul {
 }
 
 .home > h1 > a {
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }
 
 .home > h2 {
@@ -118,7 +118,7 @@ ul {
 
 .resume > header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #800000;
+  border-bottom: 1px solid var(--resume-color);
 }
 
 .resume a {
@@ -127,8 +127,7 @@ ul {
 
 .resume-contact {
 	display: inline;
-	font-family: "Prime Light";
-	color: #800000;
+	color: var(--resume-color);
 }
 
 .academic-info {
@@ -139,10 +138,9 @@ ul {
 	display: block;
 	float: left;
 	text-align: right;
-	width: 140px;
+	width: 170px;
   font-size: 60px;
-	font-family: "Prime Light";
-	color: #800000;
+	color: var(--resume-color);
 }
 
 .contact-info {
@@ -152,15 +150,13 @@ ul {
 .title {
 	display: inline-block;
   font-size: 24px;
-	font-family: "Prime Light";
 }
 
 .heading {
   font-size: 30px;
-	font-family: "Prime Light";
 	margin: 10px 0 20px 0;
-	border-bottom: 1px solid #800000;
-	color: #800000;
+	border-bottom: 1px solid var(--resume-color);
+	color: var(--resume-color);
 }
 
 .hidden {
@@ -182,7 +178,7 @@ ul {
 }
 
 .experience .details, .experience .info {
-	font-family: "Prime Light";
+	font-family: var(--resume-heading);
 }
 
 .projects ul > li, .experience ul > li, .technologies p, .other-interests p {
@@ -208,7 +204,7 @@ ul {
 }
 
 .project-header {
-	border-bottom: 1px solid #800000;
+	border-bottom: 1px solid var(--resume-color);
 }
 
 .projects h2 {
