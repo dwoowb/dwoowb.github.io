@@ -173,8 +173,10 @@ ul {
 }
 
 .info {
-	font-size: 14px;
+	font-size: 16px;
+	font-style: italic;
 	margin-bottom: 10px;
+	border-bottom: 1px solid black;
 }
 
 .experience .details, .experience .info {
