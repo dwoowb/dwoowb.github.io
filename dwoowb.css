@@ -1,5 +1,6 @@
 :root {
-  --resume-color: #800000;
+  /*--resume-color: #800000;*/
+  --resume-color: #000000;
 }
 
 a {
@@ -118,7 +119,7 @@ ul {
 
 .resume > header {
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--resume-color);
+  /*border-bottom: 1px solid var(--resume-color);*/
 }
 
 .resume a {
@@ -149,11 +150,12 @@ ul {
 
 .title {
 	display: inline-block;
-  font-size: 24px;
+  font-size: 22px;
+  margin-right: 3px;
 }
 
 .heading {
-  font-size: 30px;
+  font-size: 28px;
 	margin: 10px 0 20px 0;
 	border-bottom: 1px solid var(--resume-color);
 	color: var(--resume-color);
@@ -169,7 +171,7 @@ ul {
 
 .details {
   display: inline-block;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .info {
